@@ -1,0 +1,45 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+* {
+    color: $dark-grey;
+    font-family: $font;
+    font-size: $t-18;
+    line-height: $l-h;
+}
+
+h1, h2 {
+    font-weight: $bold;
+    text-transform: $t-cap;
+}
+
+h1 {
+    font-size: $d-h1;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: $d-h2;
+    line-height: 57px;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: $m-h1;
+        line-height: 45px;
+    }
+    
+    h2 {
+        font-size: $m-h2;
+        line-height: 27px;
+    }
+}

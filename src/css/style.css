@@ -1,0 +1,49 @@
+body {
+  background: #08020d;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+* {
+  color: #cacaca;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
