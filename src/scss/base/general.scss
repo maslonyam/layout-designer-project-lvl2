@@ -1,0 +1,23 @@
+body {
+    background: $grey;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    position: relative;
+
+    margin: $m-a;
+}
+
+@media only screen and (min-width: 1240px) {
+    .content-wrapper {
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .content-wrapper {
+        margin: 0 20px;
+    }
+}

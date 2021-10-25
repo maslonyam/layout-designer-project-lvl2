@@ -8,63 +8,68 @@
     <title>Music Box Maslonyam</title>
 </head>
 <body>
-    <nav class="navigation">
+    <header id="header">
+    <nav class="navigation content-wrapper">
         <ul class="navigation-list">
-            <li class="navgation-list__item">
+            <li class="navigation-list__item">
                 <img src="images/logo.svg" alt="logo" class="logo">
-                <p>MUSIC BOX</p>
+                Music Box
             </li>
-            <li class="navgation-list__item">
+            <li class="navigation-list__item">
                 Главная
             </li>
-            <li class="navgation-list__item">
+            <li class="navigation-list__item">
                 Каталог
             </li>
-            <li class="navgation-list__item">
+            <li class="navigation-list__item">
                 Исполнители
             </li>
-            <li class="navgation-list__item">
+            <li class="navigation-list__item">
                 Контакты
             </li>
-            <li class="navgation-list__item">
-                <label for="search">ПОИСК...</label>
-                <input type="search" id="search">
+            <li class="navigation-list__item">
+                <input type="search" id="search" placeholder="ПОИСК...">
             </li>
         </ul>
     </nav>
-    <main>
+    </header>
+    <main class="banner">
         <section id="page-description">
-            <h1>Онлайн музыка где угодно</h1>
-            <h2>без ограничений</h2>
-            <fieldset>
-                <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-                <input type="text" id="name" placeholder="Имя">
-                <input type="text" id="email" placeholder="Email">
-                <input type="submit" id="submit" placeholder="ПОЛУЧИТЬ ДОСТУП">
-            </fieldset>
-        </section>
-        <section id="taxes">
-            <h2></h2>
-            <div class="taxes-container">
-                <div class="taxes-card">
-                    <h3>Бесплатная</h3>
-                    <p class="taxes-price">0 руб.</p>
-                    <a href="#" class="button-link">Оформить</a>
-                    <p class="taxes-description">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p></div>
-                <div class="taxes-card">
-                    <h3>Стандартная</h3>
-                    <p class="taxes-price">250 руб.</p>
-                    <a href="#" class="button-link">Оформить</a>
-                    <p class="taxes-description">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p></div>
-                <div class="taxes-card">
-                    <h3>Премиум</h3>
-                    <p class="taxes-price">500 руб.</p>
-                    <a href="#" class="button-link">Оформить</a>
-                    <p class="taxes-description">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p></div>
+            <div class="content-wrapper">
+                <h1 class="page-description__header">Онлайн музыка где угодно</h1>
+                <h2 class="page-description__header">без ограничений</h2>
+                <p class="page-description__form-description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                <fieldset class="page-description__form">
+                    <input class="page-description__form-input input" type="text" id="name" placeholder="Имя">
+                    <input class="page-description__form-input input" type="text" id="email" placeholder="Email">
+                    <input class="page-description__form-input button" type="submit" id="submit" value="ПОЛУЧИТЬ ДОСТУП">
+                </fieldset>
             </div>
-            <p>На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
         </section>
     </main>
+        <section id="taxes">
+            <div class="content-wrapper">
+                <h2></h2>
+                <div class="taxes-container">
+                    <div class="taxes-card">
+                        <h3>Бесплатная</h3>
+                        <p class="taxes-price">0 руб.</p>
+                        <a href="#" class="button-link">Оформить</a>
+                        <p class="taxes-description">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p></div>
+                    <div class="taxes-card">
+                        <h3>Стандартная</h3>
+                        <p class="taxes-price">250 руб.</p>
+                        <a href="#" class="button-link">Оформить</a>
+                        <p class="taxes-description">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p></div>
+                    <div class="taxes-card">
+                        <h3>Премиум</h3>
+                        <p class="taxes-price">500 руб.</p>
+                        <a href="#" class="button-link">Оформить</a>
+                        <p class="taxes-description">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p></div>
+                </div>
+                <p>На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+        </div>
+        </section>
     <section id="news">
         <h2></h2>
         <article class="news-container">

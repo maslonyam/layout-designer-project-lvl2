@@ -10,16 +10,24 @@
     src: url(../fonts/Roboto-Bold.ttf);
 }
 
-* {
+p,
+h1,
+h2,
+h3,
+h4,
+li {
     color: $dark-grey;
     font-family: $font;
     font-size: $t-18;
-    line-height: $l-h;
+    line-height: 1.5;
+
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
     font-weight: $bold;
-    text-transform: $t-cap;
+    text-transform: $t-up;
 }
 
 h1 {
@@ -30,6 +38,14 @@ h1 {
 h2 {
     font-size: $d-h2;
     line-height: 57px;
+}
+
+li {
+    list-style: none;
+}
+
+input::-webkit-input-placeholder {
+    color: $white;
 }
 
 @media screen and (max-width: 700px) {

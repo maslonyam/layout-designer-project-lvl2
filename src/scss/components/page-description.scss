@@ -1,0 +1,66 @@
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#page-description {
+    padding: 200px 0;
+}
+
+.page-description__header {
+    text-align: center;
+    color: $white;
+}
+
+.page-description__form-description {
+    margin-top: 30px;
+    margin-bottom: 17px;
+    text-align: center;
+    font-size: $t-16;
+    color: $white;
+}
+
+.page-description__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 570px;
+    margin: $m-a;
+    padding: 0;
+
+    border: none;
+}
+
+.page-description__form-input {
+    box-sizing: border-box;
+    min-width: 270px;
+    min-height: 50px;
+
+    color: $white;
+
+    background: none;
+    outline: none;
+}
+
+.page-description__form-input.input {
+    margin-bottom: 1.5rem;
+    padding-left: 20px;
+
+    border: 2px solid $dark-grey;
+    border-radius: 3px;
+}
+
+.page-description__form-input.button {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background: $green;
+    border: none;
+}
+
+@media only screen and (max-width: 1240px) {
+    .page-description__form-input {
+        min-width: 100%;
+    }
+}
