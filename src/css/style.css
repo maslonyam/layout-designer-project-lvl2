@@ -311,9 +311,15 @@ body {
   color: #fff;
 }
 
+.page-news_container {
+  display: flex;
+  flex-direction: column;
+}
+
 .news-item {
   display: flex;
   flex-direction: row;
+  margin-bottom: 64px;
 }
 
 .news-item__img {
@@ -323,10 +329,6 @@ body {
 
 .news-item > img {
   padding-right: 50px;
-}
-
-.news-item_reverse {
-  margin-top: 64px;
 }
 
 .news-item_reverse > img {
@@ -340,7 +342,7 @@ body {
 
 .news-item__author {
   display: grid;
-  grid-template-columns: 20px repeat(2, 70px);
+  grid-template-columns: 20px repeat(2, 75px);
   column-gap: 16px;
   margin-top: 24px;
   margin-bottom: 48px;
@@ -359,12 +361,12 @@ body {
 .news-item__author-name {
   grid-column: 2;
   color: #f89202;
-  font-size: 12px;
+  font-size: 12.8px;
 }
 
 .news-item__author-date {
   grid-column: 3;
-  font-size: 12px;
+  font-size: 12.8px;
 }
 
 .news-item__header {
@@ -376,7 +378,31 @@ body {
 
 .news-item__button {
   padding: 16px 30px;
-  font-size: 12px;
+  font-size: 12.8px;
+}
+
+@media screen and (max-width: 840px) {
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-item__img {
+    width: 375px;
+    height: 186px;
+  }
+
+  .news-item_reverse > img {
+    order: 1;
+    padding-left: 0;
+  }
+
+  .news-item_reverse > .news-item__body {
+    order: 2;
+  }
+
+  .news-item__body {
+    width: 375px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
