@@ -483,13 +483,9 @@ input::-webkit-input-placeholder {
 
 #about {
   display: grid;
-  grid-template-columns: repeat(4, 270px);
+  grid-template-columns: repeat(4, auto);
   column-gap: 40px;
   padding: 3rem 0;
-}
-
-#footer-navigation {
-  padding: 2rem 0;
 }
 
 #about > div {
@@ -500,10 +496,16 @@ input::-webkit-input-placeholder {
 #about > div > h4 {
   padding-bottom: 14px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .socials > a {
   padding-right: 24px;
+}
+
+#footer-navigation {
+  display: flex;
+  padding: 2rem 0;
 }
 
 #footer-navigation > a {
@@ -517,6 +519,25 @@ input::-webkit-input-placeholder {
 
 hr {
   width: 99vw;
+}
+
+@media screen and (max-width: 700px) {
+  #about {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  #about > div > h4 {
+    padding-top: 30px;
+  }
+
+  #footer-navigation {
+    flex-direction: column;
+  }
+
+  #footer-navigation > a {
+    padding-bottom: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
