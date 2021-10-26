@@ -53,8 +53,9 @@
 
 .page-description__form-input.button {
     width: 100%;
-    padding: 20px 30px;
-    border-radius: 5px;
+
+    font-size: $t-13;
+    
     background: $green;
     border: none;
 }

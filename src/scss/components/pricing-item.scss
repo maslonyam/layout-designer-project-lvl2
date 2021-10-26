@@ -1,0 +1,55 @@
+.pricing-item {
+    box-sizing: border-box;
+    max-width: 370px;
+    height: 615px;
+    padding: 0 1.6rem;
+    margin-bottom: 50px;
+
+    border-radius: 1rem;
+}
+
+.pricing-item:first-child {
+    background: center / contain no-repeat url(../images/subscribe_1.png);
+}
+
+.pricing-item:nth-child(2) {
+    background: center / contain no-repeat url(../images/subscribe_2.png);
+}
+
+.pricing-item:last-child {
+    background: center / contain no-repeat url(../images/subscribe_3.png);
+}
+
+.pricing-item__header {
+    padding-top: 24px;
+    padding-bottom: 200px;
+
+    font-size: $d-h3;
+    text-transform: $t-up;
+    font-weight: $regular;
+    text-align: center;
+    color: $white;
+}
+
+.pricing-value {
+    padding-bottom: 40px;
+    line-height: normal;
+    text-align: center;
+    font-size: $t-64;
+    color: $white;
+}
+
+.pricing-value_rub {
+    font-size: $t-32;
+}
+
+.pricing-button {
+    width: 100%;
+}
+
+.pricing-footer {
+    padding-top: 64px;
+    text-align: center;
+    font-size: $t-12;
+    color: $white;
+}

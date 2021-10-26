@@ -9,6 +9,7 @@
   src: url(../fonts/Roboto-Bold.ttf);
 }
 p,
+a,
 h1,
 h2,
 h3,
@@ -41,6 +42,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 input::-webkit-input-placeholder {
   color: #fff;
 }
@@ -65,6 +70,21 @@ body {
 .content-wrapper {
   position: relative;
   margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: none;
+  outline: none;
 }
 
 @media only screen and (min-width: 1240px) {
@@ -199,8 +219,7 @@ body {
 
 .page-description__form-input.button {
   width: 100%;
-  padding: 20px 30px;
-  border-radius: 5px;
+  font-size: 13.3px;
   background: #34c176;
   border: none;
 }
@@ -209,6 +228,87 @@ body {
   .page-description__form-input {
     min-width: 100%;
   }
+}
+#page-pricing {
+  padding-top: 100px;
+  background: #08020d;
+}
+
+.page-pricing__header {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.page-pricing_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-pricing__footer {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-pricing_container {
+    justify-content: space-around;
+  }
+}
+.pricing-item {
+  box-sizing: border-box;
+  max-width: 370px;
+  height: 615px;
+  padding: 0 1.6rem;
+  margin-bottom: 50px;
+  border-radius: 1rem;
+}
+
+.pricing-item:first-child {
+  background: center/contain no-repeat url(../images/subscribe_1.png);
+}
+
+.pricing-item:nth-child(2) {
+  background: center/contain no-repeat url(../images/subscribe_2.png);
+}
+
+.pricing-item:last-child {
+  background: center/contain no-repeat url(../images/subscribe_3.png);
+}
+
+.pricing-item__header {
+  padding-top: 24px;
+  padding-bottom: 200px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+.pricing-value {
+  padding-bottom: 40px;
+  line-height: normal;
+  text-align: center;
+  font-size: 64px;
+  color: #fff;
+}
+
+.pricing-value_rub {
+  font-size: 32px;
+}
+
+.pricing-button {
+  width: 100%;
+}
+
+.pricing-footer {
+  padding-top: 64px;
+  text-align: center;
+  font-size: 12.8px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

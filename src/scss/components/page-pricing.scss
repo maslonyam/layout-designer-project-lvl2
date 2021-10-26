@@ -1,0 +1,30 @@
+#page-pricing {
+    padding-top: 100px;
+    background: $black;
+}
+
+.page-pricing__header {
+    margin-bottom: 50px;
+
+    text-align: center;
+    color: $white;
+}
+
+.page-pricing_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page-pricing__footer {
+    text-align: center;
+    font-size: $t-16;
+    color: $white;
+}
+
+@media screen and (max-width: 1200px) {
+    .page-pricing_container {
+        justify-content: space-around;
+    }   
+}
+
