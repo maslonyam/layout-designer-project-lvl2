@@ -18,8 +18,10 @@ body {
 .section-header {
     margin-bottom: 50px;
 
+    font-size: $d-h2;
     text-align: center;
     color: $white;
+    text-transform: $t-up;
 }
 
 .button {
@@ -28,7 +30,7 @@ body {
     padding: 20px 30px;
 
     text-align: center;
-    font-size: $t-16;
+    font-size: $t-12;
     text-transform: $t-up;
     font-weight: $regular;
     color: $white;

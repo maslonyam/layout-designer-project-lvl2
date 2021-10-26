@@ -1,0 +1,48 @@
+.mobile-app_container {
+    display: flex;
+
+    padding-bottom: 100px;
+}
+
+.mobile-app__description {
+    width: 600px;
+
+    padding-right: 144px;
+}
+
+.mobile-app__description > p {
+    font-size: $t-16;
+}
+
+.mobile-button {
+    padding: 16px 40px;
+    margin-top: 16px;
+
+    text-transform: none;
+
+    border: none;
+    border-radius: 32px;
+    background: $red;
+}
+
+.mobile-app__img {
+    width: 333px;
+    height: 278px;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile-app_container {
+        flex-direction: column;
+    }
+
+    .mobile-app__description {
+        width: 100%;
+        order: 2;
+    
+        padding-right: 0;
+    }
+
+    .mobile-app__img {
+        margin: 0 auto;
+    }
+}
