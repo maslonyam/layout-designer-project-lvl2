@@ -8,11 +8,15 @@
     padding: 0;
 }
 
-.navigation-list__item {
-    margin: 0 24px;
+.navigation-list__item > a {
+    margin-right: 24px;
 
     font-size: $t-11;
     text-transform: $t-up;
+}
+
+.navigation-list__item > a:hover {
+    color: $white;
 }
 
 .navigation-list__item:first-child {

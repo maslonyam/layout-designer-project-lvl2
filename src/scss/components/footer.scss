@@ -1,0 +1,42 @@
+#footer {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 40px;
+    padding: 3rem 0;
+}
+
+#footer-navigation {
+    padding: 2rem 0;
+}
+
+#about > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#about > div > h4 {
+    padding-bottom: 14px;
+
+    color: $white;
+}
+
+.socials > a {
+    padding-right: 24px;
+}
+
+#footer-navigation > a {
+    padding-right: 16px;
+}
+
+#about > div > a:hover,
+#footer-navigation > a:hover {
+    color: $white;
+}
+
+hr {
+    width: 99vw;
+}

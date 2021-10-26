@@ -19,7 +19,7 @@ h4,
 li {
     color: $dark-grey;
     font-family: $font;
-    font-size: $t-18;
+    font-size: $t-16;
     line-height: 1.5;
 
     margin: 0;
@@ -39,6 +39,10 @@ h1 {
 h2 {
     font-size: $d-h2;
     line-height: 57px;
+}
+
+h4 {
+    font-size: $d-h4;
 }
 
 li {

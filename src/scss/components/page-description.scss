@@ -60,6 +60,12 @@
     border: none;
 }
 
+.page-description__form-input.button:hover {
+    color: $white;
+
+    background: $orange;
+}
+
 @media only screen and (max-width: 1240px) {
     .page-description__form-input {
         min-width: 100%;
