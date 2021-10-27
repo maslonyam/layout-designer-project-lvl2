@@ -1,0 +1,29 @@
+.item {
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+.item-img {
+    width: 250px;
+    height: 250px;
+}
+
+.item-header {
+    margin-top: 18px;
+
+    font-size: 18px;
+    color: $white;
+    line-height: 27px;
+    text-transform: $t-cap;
+}
+
+@media screen and (max-width: 700px) {
+    .item-img {
+        width: 137px;
+        height: 137px;
+    }
+
+    .item-info  {
+        width: 137px;
+    }
+}
