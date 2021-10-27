@@ -8,39 +8,46 @@
     <title>Music Box Maslonyam</title>
 </head>
 <body>
-    <nav class="navigation">
-        <ul class="navigation-list">
-            <li class="navigation-list__item">
-                <img src="images/logo.svg" alt="logo" class="logo">
-                <p>MUSIC BOX</p>
-            </li>
-            <li class="navigation-list__item">
-                Главная
-            </li>
-            <li class="navigation-list__item">
-                Каталог
-            </li>
-            <li class="navigation-list__item">
-                Исполнители
-            </li>
-            <li class="navigation-list__item">
-                Контакты
-            </li>
-            <li class="navigation-list__item">
-                <label for="search">ПОИСК...</label>
-                <input type="search" id="search">
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Morten Harket</h1>
-        <p>24 875 поклонников</p>
-        <input type="button" value="МИКС">
-        <input type="button" value="В ИЗБРАННОЕ">
-        <img src="images/Morten Harket.png" alt="Morten Harket">
+    <header id="header">
+        <nav class="navigation content-wrapper">
+            <ul class="navigation-list">
+                <li class="navigation-list__item">
+                    <img src="images/logo.svg" alt="logo" class="logo">
+                    <a href="#">Music Box</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#">Исполнители</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="navigation-list__item">
+                    <input type="search" id="search" placeholder="ПОИСК...">
+                </li>
+            </ul>
+        </nav>
+        </header>
+    <main class="banner-artist">
+        <section id="page-description">
+            <div class="content-wrapper">
+        <h1 class="page-description__header-artist">Morten Harket</h1>
+        <p class="page-description__description-artist">24 875 поклонников</p>
+        <div class="page-description__button-container">
+        <button type="button" class="page-description__form-input button button-artist purple">Микс</button>
+        <button type="button" class="page-description__form-input button button-artist red">В избранное</button>
+        </div>
+    </div>
+    </section>
     </main>
-    <section id="popular-tracks">
-        <h2>Популярные треки</h2>
+    <section id="popular-tracks" class="section">
+        <div class="content-wrapper">
+        <h2 class="section-header">Популярные треки</h2>
         <ul class="popular-tracks__list">
             <li class="tracks-item">
                 <img src="images/Wild Seed.png" alt="Spanish Step">
@@ -79,9 +86,11 @@
                 <p>3:52</p>
             </li>
         </ul>
+        </div>
     </section>
-    <section id="discography">
-        <h2>Дискография</h2>
+    <section id="discography" class="section">
+        <div class="content-wrapper">
+        <h2 class="section-header">Дискография</h2>
         <ul class="discography-list">
             <li class="discography__item">
                 <img src="images/Brother.png" alt="Brother">
@@ -114,9 +123,11 @@
                 <p>1993</p>
             </li>
         </ul>
+        </div>
     </section>
-    <section class="artists">
-        <h2>Похожие исполнители</h2>
+    <section class="artists" class="section">
+        <div class="content-wrapper">
+        <h2 class="section-header">Похожие исполнители</h2>
         <ul class="artists-list">
             <li class="artists__item">
                 <img src="images/A-ha.png" alt="A-Ha">
@@ -159,8 +170,10 @@
                 <p>73 351 поклонников</p>
             </li>
         </ul>
+        </div>
     </section>
-    <footer>
+    <footer id="footer">
+        <div class="content-wrapper">
         <section id="about">
             <div>
                 <h4>О нас</h4>
@@ -184,19 +197,25 @@
             </div>
             <div>
                 <h4>Подписывайтесь</h4>
+                <div class="socials">
                 <a href="#"><img src="images/Google+.png"></a>
                 <a href="#"><img src="images/Twitter.png"></a>
                 <a href="#"><img src="images/Facebook.png"></a>
                 <a href="#"><img src="images/Instagram.png"></a>
             </div>
+            </div>
         </section>
-        <section class="footer-navigation">
+    </div>
+    <hr>
+        <div class="content-wrapper">
+        <section id="footer-navigation">
             <a href="#">Магазин</a>
             <a href="#">Обслуживание</a>
             <a href="#">Блог</a>
             <a href="#">Поддержка</a>
             <a href="#">Контакты</a>
         </section>
+    </div>
     </footer>
 </body>
 </html>

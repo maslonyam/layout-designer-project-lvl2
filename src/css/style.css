@@ -178,7 +178,7 @@ input::-webkit-input-placeholder {
   padding-right: 16px;
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 860px) {
   .navigation-list {
     flex-direction: column;
   }
@@ -196,8 +196,14 @@ input::-webkit-input-placeholder {
     width: 100%;
   }
 }
-.banner {
+.banner-main {
   background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-artist {
+  background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
@@ -211,12 +217,21 @@ input::-webkit-input-placeholder {
   color: #fff;
 }
 
+.page-description__header-artist {
+  margin-top: 55px;
+  color: #fff;
+}
+
 .page-description__form-description {
   margin-top: 30px;
   margin-bottom: 17px;
   text-align: center;
   font-size: 16px;
   color: #fff;
+}
+
+.page-description__description-artist {
+  margin: 16px 0 48px;
 }
 
 .page-description__form {
@@ -257,9 +272,46 @@ input::-webkit-input-placeholder {
   background: #f89202;
 }
 
-@media only screen and (max-width: 1240px) {
+.page-description__button-container {
+  display: flex;
+}
+
+.page-description__form-input.button-artist {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  min-width: 200px;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+}
+
+.button-artist.purple {
+  background: #5328a1;
+}
+
+.button-artist.red {
+  background: #95390c;
+}
+
+.button-artist__icon {
+  width: 20px;
+  margin-right: 16px;
+}
+
+path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+@media only screen and (max-width: 860px) {
   .page-description__form-input {
     min-width: 100%;
+  }
+
+  .page-description__button-container {
+    flex-direction: column;
   }
 }
 .page-pricing_container {
