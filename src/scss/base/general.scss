@@ -25,6 +25,11 @@ body {
     text-transform: $t-up;
 }
 
+.section-header.header-artist {
+    text-align: start;
+}
+
+
 .button {
     display: inline-block;
     box-sizing: border-box;

@@ -1,0 +1,40 @@
+.track-item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 25px;
+}
+
+.track-item__img {
+    width: 55px;
+    height: 55px;
+}
+
+.track-item__info {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    margin-left: 15px;
+}
+
+.track-item__info-header {
+    color: $white;
+    text-transform: $t-up;
+}
+
+.track-item__info p {
+    font-size: $t-12;
+}
+
+.track-item__info-time {
+    margin-left: auto;
+
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .track-item__info-time {
+        margin-right: 0;
+    }
+}
