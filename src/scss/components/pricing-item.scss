@@ -1,56 +1,61 @@
 .pricing-item {
-    box-sizing: border-box;
-    max-width: 370px;
-    height: 615px;
-    padding: 0 1.6rem;
-    margin-bottom: 50px;
+  box-sizing: border-box;
 
-    border-radius: 1rem;
+  max-width: 370px;
+  height: 615px;
+
+  margin-bottom: 50px;
+  padding: 0 1.6rem;
+
+  border-radius: 1rem;
 }
 
 .pricing-item:first-child {
-    background: center / contain no-repeat url(../images/subscribe_1.png);
+  background: center / contain no-repeat url("../images/subscribe_1.png");
 }
 
 .pricing-item:nth-child(2) {
-    background: center / contain no-repeat url(../images/subscribe_2.png);
+  background: center / contain no-repeat url("../images/subscribe_2.png");
 }
 
 .pricing-item:last-child {
-    background: center / contain no-repeat url(../images/subscribe_3.png);
+  background: center / contain no-repeat url("../images/subscribe_3.png");
 }
 
-.pricing-item__header {
-    padding-top: 24px;
-    padding-bottom: 200px;
+.pricing-header {
+  padding-top: 24px;
+  padding-bottom: 200px;
 
-    font-size: $d-h3;
-    text-transform: $t-up;
-    font-weight: $regular;
-    text-align: center;
-    color: $white;
+  color: $white;
+  font-weight: $regular;
+  font-size: $d-h3;
+  text-align: center;
+  text-transform: $t-up;
 }
 
 .pricing-value {
-    padding-bottom: 40px;
-    line-height: normal;
-    text-align: center;
-    font-size: $t-64;
-    color: $white;
+  padding-bottom: 40px;
+
+  color: $white;
+  font-size: $t-64;
+  line-height: normal;
+  text-align: center;
 }
 
-.pricing-value_rub {
-    font-size: $t-32;
+.pricing-value-rub {
+  font-size: $t-32;
 }
 
 .pricing-button {
-    width: 100%;
-    font-size: $t-16;
+  width: 100%;
+
+  font-size: $t-16;
 }
 
-.pricing-footer {
-    padding-top: 64px;
-    text-align: center;
-    font-size: $t-12;
-    color: $white;
+.pricing-item-footer {
+  padding-top: 64px;
+
+  color: $white;
+  font-size: $t-12;
+  text-align: center;
 }

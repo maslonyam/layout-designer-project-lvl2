@@ -1,133 +1,130 @@
 .banner-main {
-    background-image: url(../images/banner.png);
-    background-position: center;
-    background-size: cover;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .banner-artist {
-    background-image: url("../images/MortenHarket.png");
-    background-position: center;
-    background-size: cover;
+  background-image: url("../images/MortenHarket.png");
+  background-position: center;
+  background-size: cover;
 }
 
 #page-description {
-    padding: 200px 0;
+  padding: 200px 0;
 }
 
-.page-description__header {
-    text-align: center;
-    color: $white;
+.description-header {
+  color: $white;
+  text-align: center;
 }
 
-.page-description__header-artist {
-    margin-top: 55px;
+.description-header-artist {
+  margin-top: 55px;
 
-    color: $white;
+  color: $white;
 }
 
-.page-description__form-description {
-    margin-top: 30px;
-    margin-bottom: 17px;
-    text-align: center;
-    font-size: $t-16;
-    color: $white;
+.description-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  max-width: 570px;
+
+  margin: 30px auto 17px;
+  padding: 0;
+
+  color: $white;
+  font-size: $t-16;
+  text-align: center;
+
+  border: none;
 }
 
-.page-description__description-artist {
-    margin: 16px 0 48px;
-    
-    color: $white;
+.about-artist {
+  margin: 16px 0 48px;
+
+  color: $white;
 }
 
-.page-description__form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 570px;
-    margin: $m-a;
-    padding: 0;
+.description-input {
+  box-sizing: border-box;
+  min-width: 270px;
+  min-height: 50px;
 
-    border: none;
+  color: $white;
+
+  background: none;
+  outline: none;
 }
 
-.page-description__form-input {
-    box-sizing: border-box;
-    min-width: 270px;
-    min-height: 50px;
+.description-input.input {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
 
-    color: $white;
-
-    background: none;
-    outline: none;
+  border: 2px solid $dark-grey;
+  border-radius: 3px;
 }
 
-.page-description__form-input.input {
-    margin-bottom: 1.5rem;
-    padding-left: 20px;
+.description-input.button {
+  width: 100%;
 
-    border: 2px solid $dark-grey;
-    border-radius: 3px;
+  font-size: $t-13;
+
+  background: $green;
+  border: none;
 }
 
-.page-description__form-input.button {
-    width: 100%;
+.description-input.button:hover {
+  color: $white;
 
-    font-size: $t-13;
-    
-    background: $green;
-    border: none;
+  background: $orange;
 }
 
-.page-description__form-input.button:hover {
-    color: $white;
-
-    background: $orange;
+.description-button-container {
+  display: flex;
 }
 
-.page-description__button-container {
-    display: flex;
-}
+.description-input.button-artist {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-.page-description__form-input.button-artist {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 200px;
+  min-width: 200px;
 
-    width: 200px;
-    min-width: 200px;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
 
-    margin-right: 1.5em;
-    margin-bottom: 1.5em;
-
-    border: none;
+  border: none;
 }
 
 .button-artist.purple {
-    background: $purple;    
+  background: $purple;
 }
 
 .button-artist.red {
-    background: $red;
+  background: $red;
 }
 
-.button-artist__icon {
-    width: 20px;
+.button-icon {
+  width: 20px;
 
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
-path { 
-    fill: $white;
-    stroke: $white; 
+path {
+  fill: $white;
+  stroke: $white;
 }
-
 
 @media only screen and (max-width: 860px) {
-    .page-description__form-input {
-        min-width: 100%;
-    }
+  .description-input {
+    min-width: 100%;
+  }
 
-    .page-description__button-container {
-        flex-direction: column;
-    }
+  .description-button-container {
+    flex-direction: column;
+  }
 }

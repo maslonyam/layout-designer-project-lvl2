@@ -1,48 +1,49 @@
-.mobile-app_container {
-    display: flex;
+.app-container {
+  display: flex;
 
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
-.mobile-app__description {
-    width: 600px;
+.app-description {
+  width: 600px;
 
-    padding-right: 144px;
+  padding-right: 144px;
 }
 
-.mobile-app__description > p {
-    font-size: $t-16;
+.app-description > p {
+  font-size: $t-16;
 }
 
 .mobile-button {
-    padding: 16px 40px;
-    margin-top: 16px;
+  margin-top: 16px;
+  padding: 16px 40px;
 
-    text-transform: none;
+  text-transform: none;
 
-    border: none;
-    border-radius: 32px;
-    background: $red;
+  background: $red;
+
+  border: none;
+  border-radius: 32px;
 }
 
-.mobile-app__img {
-    width: 333px;
-    height: 278px;
+.app-img {
+  width: 333px;
+  height: 278px;
 }
 
 @media screen and (max-width: 900px) {
-    .mobile-app_container {
-        flex-direction: column;
-    }
+  .app-container {
+    flex-direction: column;
+  }
 
-    .mobile-app__description {
-        width: 100%;
-        order: 2;
-    
-        padding-right: 0;
-    }
+  .app-description {
+    order: 2;
+    width: 100%;
 
-    .mobile-app__img {
-        margin: 0 auto;
-    }
+    padding-right: 0;
+  }
+
+  .app-img {
+    margin: 0 auto;
+  }
 }

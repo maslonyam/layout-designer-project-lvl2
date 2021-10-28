@@ -1,64 +1,65 @@
 #footer {
-    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
 #about {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    column-gap: 40px;
-    padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  padding: 3rem 0;
+
+  column-gap: 40px;
 }
 
 #about > div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #about > div > h4 {
-    padding-bottom: 14px;
+  padding-bottom: 14px;
 
-    color: $white;
-    text-transform: $t-up;
+  color: $white;
+  text-transform: $t-up;
 }
 
 .socials > a {
-    padding-right: 24px;
+  padding-right: 24px;
 }
 
 #footer-navigation {
-    display: flex;
-    padding: 2rem 0;
+  display: flex;
+  padding: 2rem 0;
 }
 
 #footer-navigation > a {
-    padding-right: 16px;
+  padding-right: 16px;
 }
 
-#about > div > a:hover,
-#footer-navigation > a:hover {
-    color: $white;
+#footer-navigation > a:hover,
+#about > div > a:hover {
+  color: $white;
 }
 
 hr {
-    width: 99vw;
+  width: 99vw;
 }
 
 @media screen and (max-width: 700px) {
-    #about {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(4, auto);
-    }
+  #about {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+  }
 
-    #about > div > h4 {
-        padding-top: 30px;
-    }
+  #about > div > h4 {
+    padding-top: 30px;
+  }
 
-    #footer-navigation {
-        flex-direction: column;
-    }
+  #footer-navigation {
+    flex-direction: column;
+  }
 
-    #footer-navigation > a {
-        padding-bottom: 16px;
-    }
-    
+  #footer-navigation > a {
+    padding-bottom: 16px;
+  }
 }

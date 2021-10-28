@@ -1,13 +1,13 @@
 @font-face {
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 
 p,
@@ -17,59 +17,60 @@ h2,
 h3,
 h4,
 li {
-    color: $dark-grey;
-    font-family: $font;
-    font-size: $t-16;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
 
-    margin: 0;
-    padding: 0;
+  color: $dark-grey;
+  font-size: $t-16;
+  font-family: $font;
+  line-height: 1.5;
 }
 
-h1, h2 {
-    font-weight: $bold;
-    text-transform: $t-up;
+h1,
+h2 {
+  font-weight: $bold;
+  text-transform: $t-up;
 }
 
 h1 {
-    font-size: $d-h1;
-    line-height: 90px;
+  font-size: $d-h1;
+  line-height: 90px;
 }
 
 h2 {
-    font-size: $d-h2;
-    line-height: 57px;
+  font-size: $d-h2;
+  line-height: 57px;
 }
 
 h3 {
-    font-weight: $bold;
+  font-weight: $bold;
 }
 
 h4 {
-    font-size: $d-h4;
+  font-size: $d-h4;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-input::-webkit-input-placeholder {
-    color: $white;
+input:-webkit-input-placeholder {
+  color: $white;
 }
 
 @media screen and (max-width: 700px) {
-    h1 {
-        font-size: $m-h1;
-        line-height: 45px;
-    }
-    
-    h2,
-    .section-header {
-        font-size: $m-h2;
-        line-height: 27px;
-    }
+  h1 {
+    font-size: $m-h1;
+    line-height: 45px;
+  }
+
+  h2,
+  .section-header {
+    font-size: $m-h2;
+    line-height: 27px;
+  }
 }
