@@ -9,7 +9,7 @@
 }
 
 .news-item > img {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .news-reverse {
@@ -19,7 +19,7 @@
 .news-reverse > img {
   order: 2;
 
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .news-body {
@@ -60,6 +60,8 @@
 }
 
 .news-header {
+  margin-bottom: 30px;
+
   color: $white;
   font-size: $m-h1;
   line-height: 45px;
@@ -74,6 +76,11 @@
   .news-item {
     flex-direction: column;
     align-items: center;
+  }
+
+  .news-header {
+    margin-top: 50px;
+    margin-bottom: 16px;
   }
 
   .news-img {
