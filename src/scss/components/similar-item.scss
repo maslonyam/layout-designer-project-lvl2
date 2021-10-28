@@ -9,8 +9,6 @@
 }
 
 .item-header {
-  margin-top: 18px;
-
   color: $white;
   font-size: 18px;
   line-height: 27px;
@@ -22,12 +20,12 @@
 }
 
 @media screen and (max-width: 700px) {
-  .item-img {
+    .item {
+      width: 137px
+    }
+
+    .item-img {
     width: 137px;
     height: 137px;
-  }
-
-  .item-info {
-    width: 137px;
   }
 }
