@@ -73,8 +73,7 @@ a,
 h1,
 h2,
 h3,
-h4,
-li {
+h4 {
   margin: 0;
   padding: 0;
   color: #cacaca;
@@ -158,8 +157,7 @@ input:-webkit-input-placeholder {
 }
 
 .logo-container a {
-  display: block;
-  height: 13px;
+  line-height: 13px;
 }
 
 .navigation-list {
@@ -169,7 +167,6 @@ input:-webkit-input-placeholder {
 }
 
 .navigation-item > a {
-  display: block;
   margin-right: 24px;
 }
 
@@ -211,15 +208,13 @@ input:-webkit-input-placeholder {
 
   .navigation-item {
     margin: 0;
-  }
-
-  #search {
-    margin: 0;
-    margin-top: 24px;
+    line-height: 13px;
   }
 
   #search {
     width: 100%;
+    margin: 0;
+    margin-top: 16px;
   }
 }
 .banner-main {
@@ -258,7 +253,7 @@ input:-webkit-input-placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 570px;
-  margin: 17px auto 17px;
+  margin: 17px auto 0;
   padding: 0;
   color: #fff;
   font-size: 16px;
@@ -389,18 +384,18 @@ path {
 }
 
 .track-info-header {
-  grid-column: 1;
   width: fit-content;
+  grid-column: 1;
   color: #fff;
   text-transform: uppercase;
 }
 
 .track-info-name {
   grid-column: 1;
-  width: fit-content;
 }
 
 .track-info p {
+  width: fit-content;
   font-size: 12.8px;
 }
 
@@ -432,7 +427,7 @@ path {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1140px) {
   .pricing-container {
     justify-content: space-around;
   }
@@ -498,6 +493,12 @@ path {
   text-align: center;
 }
 
+@media screen and (max-width: 700px) {
+  .pricing-header {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
 #page-artists {
   padding-bottom: 100px;
 }
@@ -712,9 +713,16 @@ path {
   margin: 0;
 }
 
+#about > ul > li:first-child {
+  margin-bottom: 14px;
+}
+
+#about a {
+  line-height: 24px;
+}
+
 #about > ul > li > h4,
 #about > div > h4 {
-  margin-bottom: 14px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -747,8 +755,7 @@ hr {
     grid-template-columns: auto;
   }
 
-  #about > ul > li > h4,
-#about > div > h4 {
+  #about > ul > li:first-child {
     margin-top: 30px;
   }
 

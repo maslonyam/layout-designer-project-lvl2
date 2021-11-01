@@ -24,9 +24,8 @@
 }
 
 .track-info-header {
-  grid-column: 1;
-
   width: fit-content;
+  grid-column: 1;
 
   color: $white;
   text-transform: $t-up;
@@ -34,10 +33,11 @@
 
 .track-info-name {
   grid-column: 1;
-  width: fit-content;
 }
 
 .track-info p {
+  width: fit-content;
+  
   font-size: $t-12;
 }
 

@@ -29,8 +29,7 @@
 }
 
 .logo-container a {
-  display: block;
-  height: 13px;
+  line-height: 13px;
 }
 
 .navigation-list {
@@ -40,7 +39,6 @@
 }
 
 .navigation-item > a {
-  display: block;
   margin-right: 24px;
 }
 
@@ -87,14 +85,12 @@
 
   .navigation-item {
     margin: 0;
-  }
-
-  #search {
-    margin: 0;
-    margin-top: 24px;
+    line-height: 13px;
   }
 
   #search {
     width: 100%;
+    margin: 0;
+    margin-top: 16px;
   }
 }

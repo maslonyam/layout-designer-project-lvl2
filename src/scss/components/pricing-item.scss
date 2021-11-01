@@ -65,3 +65,10 @@
   font-size: $t-12;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .pricing-header {
+    font-weight: $bold;
+    font-size: $m-h3;
+  }
+}
