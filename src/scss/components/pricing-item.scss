@@ -5,25 +5,30 @@
   height: 615px;
 
   margin-bottom: 50px;
-  padding: 0 1.5rem;
+  padding: 1.5rem;
 
   border-radius: 1rem;
 }
 
 .pricing-item:first-child {
-  background: center / contain no-repeat url("../images/subscribe_1.png");
+  background: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .pricing-item:nth-child(2) {
-  background: center / contain no-repeat url("../images/subscribe_2.png");
+  background: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .pricing-item:last-child {
-  background: center / contain no-repeat url("../images/subscribe_3.png");
+  background: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .pricing-header {
-  margin-top: 24px;
   margin-bottom: 200px;
 
   color: $white;
@@ -53,6 +58,7 @@
 }
 
 .pricing-item-footer {
+  width: 318px;
   margin-top: 64px;
 
   color: $white;

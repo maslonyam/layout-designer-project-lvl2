@@ -11,11 +11,15 @@
   column-gap: 40px;
 }
 
-#about > div {
+#about > ul {
   display: flex;
   flex-direction: column;
+
+  padding: 0;
+  margin: 0;
 }
 
+#about > ul > li > h4,
 #about > div > h4 {
   margin-bottom: 14px;
 
@@ -37,7 +41,7 @@
 }
 
 #footer-navigation > a:hover,
-#about > div > a:hover {
+#about > ul > li > a:hover {
   color: $white;
 }
 
@@ -51,6 +55,7 @@ hr {
     grid-template-columns: auto;
   }
 
+  #about > ul > li > h4,
   #about > div > h4 {
     margin-top: 30px;
   }

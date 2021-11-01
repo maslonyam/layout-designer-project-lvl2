@@ -11,12 +11,13 @@
 
 <body>
   <header id="header">
-    <nav class="navigation content-wrapper">
+    <div class="content-wrapper">
+    <nav class="navigation">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <a href="#">Music Box</a>
+      </div>
       <ul class="navigation-list">
-        <li class="navigation-item">
-          <img src="images/logo.svg" alt="logo" class="logo">
-          <a href="#">Music Box</a>
-        </li>
         <li class="navigation-item">
           <a href="#">Главная</a>
         </li>
@@ -29,18 +30,17 @@
         <li class="navigation-item">
           <a href="#">Контакты</a>
         </li>
-        <li class="navigation-item">
-          <input type="search" id="search" placeholder="ПОИСК...">
-        </li>
       </ul>
+      <input type="search" id="search" placeholder="ПОИСК...">
     </nav>
+  </div>
   </header>
   <main>
     <section id="page-description" class="banner-main">
       <div class="content-wrapper">
         <h1 class="description-header">Онлайн музыка где угодно</h1>
         <h2 class="description-header">без ограничений</h2>
-        <p class="description-form">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <p class="description-paragraph">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
         <form class="description-form">
           <input class="description-input input" type="text" id="name" placeholder="Имя">
           <input class="description-input input" type="text" id="email" placeholder="Email">
@@ -127,29 +127,28 @@
     </div>
   </section>
   <footer id="footer" class="bg-gradient">
-
     <div class="content-wrapper">
       <section id="about">
-        <div>
-          <h4>О нас</h4>
-          <a href="#">История компании</a>
-          <a href="#">Карьера</a>
-          <a href="#">Особенности</a>
-          <a href="#">Пресса</a>
-        </div>
-        <div>
-          <h4>Поддержка</h4>
-          <a href="#">База знаний</a>
-          <a href="#">Тарифы</a>
-          <a href="#">Мобильное приложение</a>
-          <a href="#">Условия использования</a>
-        </div>
-        <div>
-          <h4>Контакты</h4>
-          <p>hello@music.box</p>
-          <p>Russia, Moscow. Music Box studio</p>
-          <p>+ 7 499 999 99 99</p>
-        </div>
+        <ul>
+          <li><h4>О нас</h4></li>
+          <li><a href="#">История компании</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="#">Особенности</a></li>
+          <li><a href="#">Пресса</a></li>
+        </ul>
+        <ul>
+          <li><h4>Поддержка</h4></li>
+          <li><a href="#">База знаний</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Мобильное приложение</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+        <ul>
+          <li><h4>Контакты</h4></li>
+          <li><p>hello@music.box</p></li>
+          <li><p>Russia, Moscow. Music Box studio</p></li>
+          <li><p>+ 7 499 999 99 99</p></li>
+        </ul>
         <div>
           <h4>Подписывайтесь</h4>
           <div class="socials">

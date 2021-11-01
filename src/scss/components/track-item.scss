@@ -16,6 +16,7 @@
   grid-template-columns: auto 25px;
   grid-column: 2;
 }
+
 .track-img {
   grid-column: 1;
   width: 55px;
@@ -23,18 +24,20 @@
 }
 
 .track-info-header {
-  display: inline-block;
   grid-column: 1;
+
+  width: fit-content;
+
   color: $white;
   text-transform: $t-up;
 }
 
 .track-info-name {
   grid-column: 1;
+  width: fit-content;
 }
 
 .track-info p {
-  display: inline-block;
   font-size: $t-12;
 }
 
@@ -44,7 +47,6 @@
   align-self: center;
 
   margin-right: 50px;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 700px) {
