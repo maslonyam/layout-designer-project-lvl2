@@ -38,7 +38,7 @@
   margin: 0;
 }
 
-.navigation-item > a {
+.navigation-item {
   margin-right: 24px;
 }
 
@@ -85,6 +85,7 @@
 
   .navigation-item {
     margin: 0;
+    margin-right: 0;
     line-height: 13px;
   }
 

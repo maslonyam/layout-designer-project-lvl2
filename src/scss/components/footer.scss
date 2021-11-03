@@ -19,8 +19,9 @@
   margin: 0;
 }
 
-#about > ul > li:first-child {
-  margin-bottom: 14px;
+#about > ul > li:first-child,
+#about > div > h2 {
+  margin-bottom: 16px;
 }
 
 #about a {
@@ -28,7 +29,9 @@
 }
 
 #about > ul > li > h2,
-#about > div > h2 {
+#about h2 {
+  margin-bottom: 0;
+  text-align: start;
   font-size: $t-18;
   color: $white;
   line-height: 27px;

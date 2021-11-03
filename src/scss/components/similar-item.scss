@@ -6,6 +6,8 @@
 .item-img {
   width: 250px;
   height: 250px;
+
+  margin-bottom: 16px;
 }
 
 .item h3 {
@@ -20,11 +22,11 @@
 }
 
 @media screen and (max-width: 700px) {
-    .item {
-      width: 137px
-    }
+  .item {
+    width: 137px
+  }
 
-    .item-img {
+  .item-img {
     width: 137px;
     height: 137px;
   }

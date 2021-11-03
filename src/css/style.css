@@ -97,8 +97,12 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 50px;
+  color: #fff;
   font-size: 38px;
-  line-height: 57px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -178,7 +182,7 @@ input:-webkit-input-placeholder {
   margin: 0;
 }
 
-.navigation-item > a {
+.navigation-item {
   margin-right: 24px;
 }
 
@@ -220,6 +224,7 @@ input:-webkit-input-placeholder {
 
   .navigation-item {
     margin: 0;
+    margin-right: 0;
     line-height: 13px;
   }
 
@@ -291,7 +296,7 @@ input:-webkit-input-placeholder {
   margin-bottom: 1.5rem;
   padding-left: 20px;
   border: 2px solid #cacaca;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .description-input.btn {
@@ -315,6 +320,7 @@ input:-webkit-input-placeholder {
   display: flex;
   align-items: center;
   width: 200px;
+  min-width: 200px;
   margin-right: 1.5em;
   margin-bottom: 1.5em;
   font-weight: 400;
@@ -393,9 +399,16 @@ path {
   height: 55px;
 }
 
-.track-info h3 {
+.track-info__container {
   width: fit-content;
   grid-column: 1;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+.track-info h3 {
+  width: fit-content;
+  min-width: 100%;
   color: #fff;
   font-weight: 700;
   font-size: 12.8px;
@@ -404,11 +417,11 @@ path {
 }
 
 .track-info-name {
-  grid-column: 1;
+  min-width: 100%;
+  width: fit-content;
 }
 
 .track-info p {
-  width: fit-content;
   font-size: 12.8px;
 }
 
@@ -531,6 +544,7 @@ path {
 .item-img {
   width: 250px;
   height: 250px;
+  margin-bottom: 16px;
 }
 
 .item h3 {
@@ -728,8 +742,9 @@ path {
   margin: 0;
 }
 
-#about > ul > li:first-child {
-  margin-bottom: 14px;
+#about > ul > li:first-child,
+#about > div > h2 {
+  margin-bottom: 16px;
 }
 
 #about a {
@@ -737,7 +752,9 @@ path {
 }
 
 #about > ul > li > h2,
-#about > div > h2 {
+#about h2 {
+  margin-bottom: 0;
+  text-align: start;
   font-size: 18px;
   color: #fff;
   line-height: 27px;
