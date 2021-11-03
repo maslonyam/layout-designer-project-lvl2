@@ -27,7 +27,7 @@ body {
   text-align: start;
 }
 
-.button {
+.btn {
   display: inline-block;
   box-sizing: border-box;
   padding: 20px 30px;
@@ -35,6 +35,7 @@ body {
   font-weight: 400;
   font-size: 12.8px;
   text-align: center;
+  line-height: 24px;
   text-transform: uppercase;
   background: none;
   border: 1px solid #fff;
@@ -42,7 +43,7 @@ body {
   outline: none;
 }
 
-.button:hover {
+.btn:hover {
   color: #08020d;
   background: #fff;
   cursor: pointer;
@@ -527,7 +528,7 @@ path {
   height: 250px;
 }
 
-.item-header {
+.item h3 {
   color: #fff;
   font-size: 18px;
   line-height: 27px;
@@ -619,7 +620,8 @@ path {
 }
 
 .news-button {
-  padding: 16px 30px;
+  padding: 17px 30px;
+  line-height: 19.2px;
 }
 
 @media screen and (max-width: 840px) {
@@ -729,8 +731,8 @@ path {
   line-height: 24px;
 }
 
-#about > ul > li > h4,
-#about > div > h4 {
+#about > ul > li > h2,
+#about > div > h2 {
   color: #fff;
   text-transform: uppercase;
 }

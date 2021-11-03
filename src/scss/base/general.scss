@@ -32,7 +32,7 @@ body {
   text-align: start;
 }
 
-.button {
+.btn {
   display: inline-block;
   box-sizing: border-box;
   padding: 20px 30px;
@@ -41,6 +41,7 @@ body {
   font-weight: $regular;
   font-size: $t-12;
   text-align: center;
+  line-height: 24px;
   text-transform: $t-up;
 
   background: none;
@@ -51,7 +52,7 @@ body {
   outline: none;
 }
 
-.button:hover {
+.btn:hover {
   color: $black;
 
   background: $white;
