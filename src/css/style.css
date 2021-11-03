@@ -284,6 +284,7 @@ input:-webkit-input-placeholder {
 
 .description-input.button {
   width: 100%;
+  padding-right: 30px;
   font-size: 13.3px;
   background: #34c176;
   border: none;
@@ -301,11 +302,14 @@ input:-webkit-input-placeholder {
 .description-input.button-artist {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   width: 200px;
   min-width: 200px;
   margin-right: 1.5em;
   margin-bottom: 1.5em;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 12.8px;
+  text-transform: uppercase;
   border: none;
 }
 
@@ -383,10 +387,13 @@ path {
   height: 55px;
 }
 
-.track-info-header {
+.track-info h3 {
   width: fit-content;
   grid-column: 1;
   color: #fff;
+  font-weight: 700;
+  font-size: 12.8px;
+  line-height: 19.2px;
   text-transform: uppercase;
 }
 
@@ -459,7 +466,7 @@ path {
   background-size: cover;
 }
 
-.pricing-header {
+.pricing-item h3 {
   margin-bottom: 200px;
   color: #fff;
   font-weight: 400;
@@ -494,9 +501,9 @@ path {
 }
 
 @media screen and (max-width: 700px) {
-  .pricing-header {
-    font-weight: 700;
+  .pricing-item h3 {
     font-size: 16px;
+    line-height: 24px;
   }
 }
 #page-artists {
@@ -602,9 +609,10 @@ path {
   font-size: 12.8px;
 }
 
-.news-header {
+.news-item h3 {
   margin-bottom: 30px;
   color: #fff;
+  font-weight: 400;
   font-size: 30px;
   line-height: 45px;
   text-transform: capitalize;
@@ -620,7 +628,7 @@ path {
     align-items: center;
   }
 
-  .news-header {
+  .news-item h3 {
     margin-top: 50px;
     margin-bottom: 16px;
     font-size: 16px;

@@ -74,6 +74,7 @@
 
 .description-input.button {
   width: 100%;
+  padding-right: 30px;
 
   font-size: $t-13;
 
@@ -94,13 +95,17 @@
 .description-input.button-artist {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 
   width: 200px;
   min-width: 200px;
 
   margin-right: 1.5em;
   margin-bottom: 1.5em;
+  padding-right: 30px;
+
+  font-weight: $regular;
+  font-size: $t-12;
+  text-transform: $t-up;
 
   border: none;
 }
