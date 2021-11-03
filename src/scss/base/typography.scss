@@ -26,7 +26,9 @@ h4 {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-weight: $bold;
   text-transform: $t-up;
 }
@@ -63,6 +65,8 @@ input:-webkit-input-placeholder {
 
 @media screen and (max-width: 700px) {
   h1 {
+    margin-top: 50px;
+  
     font-size: $m-h1;
     line-height: 45px;
   }
@@ -71,5 +75,13 @@ input:-webkit-input-placeholder {
   .section-header {
     font-size: $m-h2;
     line-height: 27px;
+  }
+
+  h3 {
+    font-size: $m-h3;
+  }
+
+  h4 {
+    font-size: $m-h4;
   }
 }

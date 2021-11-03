@@ -29,7 +29,10 @@
 
 #about > ul > li > h2,
 #about > div > h2 {
+  font-size: $t-18;
   color: $white;
+  line-height: 27px;
+  font-weight: $bold;
   text-transform: $t-up;
 }
 

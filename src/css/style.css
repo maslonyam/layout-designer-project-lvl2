@@ -84,7 +84,9 @@ h4 {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -121,6 +123,7 @@ input:-webkit-input-placeholder {
 
 @media screen and (max-width: 700px) {
   h1 {
+    margin-top: 50px;
     font-size: 30px;
     line-height: 45px;
   }
@@ -129,6 +132,14 @@ input:-webkit-input-placeholder {
 .section-header {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 }
 .navigation {
@@ -280,10 +291,10 @@ input:-webkit-input-placeholder {
   margin-bottom: 1.5rem;
   padding-left: 20px;
   border: 2px solid #cacaca;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
-.description-input.button {
+.description-input.btn {
   width: 100%;
   padding-right: 30px;
   font-size: 13.3px;
@@ -291,7 +302,7 @@ input:-webkit-input-placeholder {
   border: none;
 }
 
-.description-input.button:hover {
+.description-input.btn:hover {
   color: #fff;
   background: #f89202;
 }
@@ -304,10 +315,8 @@ input:-webkit-input-placeholder {
   display: flex;
   align-items: center;
   width: 200px;
-  min-width: 200px;
   margin-right: 1.5em;
   margin-bottom: 1.5em;
-  padding-right: 30px;
   font-weight: 400;
   font-size: 12.8px;
   text-transform: uppercase;
@@ -339,10 +348,6 @@ path {
 
   .description-button-container {
     flex-direction: column;
-  }
-
-  h1 {
-    margin-top: 50px;
   }
 
   .description-paragraph {
@@ -620,7 +625,7 @@ path {
 }
 
 .news-button {
-  padding: 17px 30px;
+  padding: 16px 30px;
   line-height: 19.2px;
 }
 
@@ -733,7 +738,10 @@ path {
 
 #about > ul > li > h2,
 #about > div > h2 {
+  font-size: 18px;
   color: #fff;
+  line-height: 27px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
